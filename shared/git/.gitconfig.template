@@ -1,0 +1,23 @@
+# Include local/private config (name, email)
+# Create ~/.gitconfig.local with your [user] section
+[include]
+    path = ~/.gitconfig.local
+
+# Multiple account support
+# Clone work repos into ~/work/, personal into ~/personal/
+[includeIf "gitdir:~/work/"]
+    path = ~/.config/git/work.gitconfig
+[includeIf "gitdir:~/personal/"]
+    path = ~/.config/git/personal.gitconfig
+
+[init]
+    defaultBranch = main
+
+[core]
+    editor = fresh
+
+[pull]
+    rebase = false
+
+[push]
+    autoSetupRemote = true

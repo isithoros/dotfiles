@@ -1,0 +1,17 @@
+# Local git identity (contains email/name - never commit)
+.gitconfig.local
+.git-accounts/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Zebar marketplace cache
+windows/zebar/.marketplace/
+windows/zebar/errors.log

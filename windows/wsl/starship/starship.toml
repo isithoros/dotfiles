@@ -1,0 +1,10 @@
+scan_timeout = 0
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[azure]
+disabled = true
